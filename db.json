@@ -1,0 +1,219 @@
+{"data": [{
+    field: {
+      name: 'DSPPartner',
+      type: '',
+      description: 'DSP Partner',
+      component: 'Dropdown',
+      callBack: this.onDropdownChange,
+      id: 'dsppartner'
+    },
+    label: {
+      title: 'DSP Partner',
+    },
+    fieldRow: 1,
+    fieldClass: 'smWidth CC'
+  }, {
+    field: {
+      name: 'DSPDescription',
+      type: 'textarea',
+      description: 'DSPDescription Description (0/160)',
+      component: 'Input',
+      callBack: this.receiveClick,
+      id: 'dspdescription'
+    },
+    label: {
+      title: 'Description (0/160)',
+    },
+    fieldRow: 2,
+    fieldClass: 'mdWidth CC'
+  }, {
+    field: {
+      name: 'Markets',
+      type: '',
+      description: 'Markets',
+      component: 'Dropdown',
+      callBack: this.onDropdownChange,
+      id: 'market'
+    },
+    label: {
+      title: 'Markets',
+    },
+    fieldRow: 3,
+    fieldClass: 'smWidth CC',
+    dependentOn: 'DSPPartner',
+  }, {
+    field: {
+      name: 'Agencies',
+      type: '',
+      description: 'DSP Agencies',
+      component: 'Dropdown',
+      callBack: this.onDropdownChange,
+      id: 'agencies'
+    },
+    label: {
+      title: 'Agencies',
+    },
+    fieldRow: 3,
+    fieldClass: 'smWidth CC',
+    dependentOn: 'Markets',
+  }, {
+    field: {
+      name: 'Clients',
+      type: '',
+      description: 'Clients',
+      component: 'Dropdown',
+      callBack: this.onDropdownChange,
+      id: 'clients'
+    },
+    label: {
+      title: 'Clients',
+    },
+    fieldRow: 4,
+    fieldClass: 'smWidth CC',
+    dependentOn: 'Markets',
+  }, {
+    field: {
+      name: 'Advertisers',
+      type: '',
+      description: 'Advertisers',
+      component: 'Dropdown',
+      callBack: this.onDropdownChange,
+      id: 'advertisers'
+    },
+    label: {
+      title: 'Advertisers',
+    },
+    fieldRow: 4,
+    fieldClass: 'smWidth CC'
+  }, {
+    field: {
+      name: 'seatName',
+      type: '',
+      description: 'Seat Name Description',
+      component: 'Input',
+      callBack: this.receiveClick,
+      id: 'seatname'
+    },
+    label: {
+      title: 'Seat Name',
+    },
+    fieldRow: 5,
+    fieldClass: 'smWidth CC'
+  }, {
+    field: {
+      name: 'SeatID',
+      type: '',
+      description: 'Seat Name Description',
+      component: 'Input',
+      callBack: this.receiveClick,
+      id: 'seatid'
+    },
+    label: {
+      title: 'Seat ID',
+    },
+    fieldRow: 5,
+    fieldClass: 'smWidth CC'
+  }, {
+    field: {
+      description: 'Seat Name Description',
+      component: 'Divider',
+      id: 'divider'
+    },
+    label: {
+      title: 'Divider Text Here',
+    },
+    fieldRow: 6,
+    fieldClass: 'lgWidth CC',
+    dependentOn: 'Clients',
+  }, {
+    field: {
+      name: 'DSPDescription2',
+      type: 'textarea',
+      description: 'DSPDescription2 Description (0/160)',
+      component: 'Input',
+      callBack: this.receiveClick,
+      id: 'dspdescription2'
+    },
+    label: {
+      title: 'Description (0/160)',
+    },
+    fieldRow: 7,
+    fieldClass: 'mdWidth CC',
+    dependentOn: 'Advertisers',
+  }, {
+    field: {
+      name: 'FileType',
+      type: '',
+      description: 'File Type Description',
+      component: 'Dropdown',
+      callBack: this.onDropdownChange,
+      id: 'FileType'
+    },
+    label: {
+      title: 'File Type',
+    },
+    fieldRow: 8,
+    fieldClass: 'smWidth CC',
+    dependentOn: 'Advertisers',
+  }, {
+    field: {
+      name: 'FileLocation',
+      type: '',
+      description: 'File Location Description',
+      component: 'Dropdown',
+      callBack: this.onDropdownChange,
+      id: 'FileLocation'
+    },
+    label: {
+      title: 'File Location',
+    },
+    fieldRow: 8,
+    fieldClass: 'smWidth CC',
+    dependentOn: 'Advertisers',
+  }, {
+    field: {
+      name: 'FilePath',
+      type: '',
+      description: 'File Path Description',
+      component: 'Input',
+      callBack: this.receiveClick,
+      id: 'FilePath'
+    },
+    label: {
+      title: 'File Path',
+    },
+    fieldRow: 8,
+    fieldClass: 'smWidth CC',
+    dependentOn: 'Advertisers',
+  }, {
+    field: {
+      name: 'LoginCredentials',
+      type: '',
+      description: 'Login Credentials Description',
+      component: 'Input',
+      callBack: this.receiveClick,
+      id: 'LoginCredentials'
+    },
+    label: {
+      title: 'Login Credentials',
+    },
+    fieldRow: 9,
+    fieldClass: 'smWidth CC',
+    dependentOn: 'Advertisers',
+  }, {
+    field: {
+      name: 'Password',
+      type: '',
+      description: 'Password Description',
+      component: 'Input',
+      callBack: this.receiveClick,
+      id: 'Password'
+    },
+    label: {
+      title: 'Password',
+    },
+    fieldRow: 9,
+    fieldClass: 'smWidth CC',
+    dependentOn: 'Advertisers',
+  }
+  ]}
